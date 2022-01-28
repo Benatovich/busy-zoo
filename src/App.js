@@ -52,7 +52,12 @@ function App() {
           </div>
         </div>
       </div>
-      
+      <Sign isOpen={isOpen} />
+      <div className='buttons'>
+        <button onClick={() => setIsOpen(true)}>Open Zoo</button>
+        <button onClick={() => setIsOpen(false)}>Close Zoo</button>
+      </div>
+
     </div>
   );
 }
