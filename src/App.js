@@ -30,7 +30,7 @@ function App() {
   function handleAddBadger() {
     setAnimalArray([...animalArray, 'badger']);
   }
-  function euthenizeAnimal() {
+  function euthanizeAnimal() {
     setAnimalArray(animalArray.slice(0, animalArray.length - 1));
   }
 
@@ -57,7 +57,18 @@ function App() {
         <button onClick={() => setIsOpen(true)}>Open Zoo</button>
         <button onClick={() => setIsOpen(false)}>Close Zoo</button>
       </div>
-
+      <Parade animalArray={animalArray} />
+      <div className='buttons'>
+        <button onClick={handleAddRat}>Rat</button>
+        <button onClick={handleAddHippo}>Hippo</button>
+        <button onClick={handleAddPenguin}>Penguin</button>
+        <button onClick={handleAddRooster}>Rooster</button>
+        <button onClick={handleAddHedgehog}>Hedgehog</button>
+        <button onClick={handleAddBadger}>Badger</button>
+        <div className='remove'>
+          <button onClick={euthanizeAnimal}>Euthanize last animal</button>
+        </div>
+      </div>
     </div>
   );
 }
