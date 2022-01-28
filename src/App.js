@@ -5,8 +5,8 @@ import Sign from './Sign';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-  const [snailSize, setSnailSize] = useState(1);
-  const [eagleSize, setEagleSize] = useState(1);
+  const [snailSize, setSnailSize] = useState(3);
+  const [eagleSize, setEagleSize] = useState(3);
   const [animalArray, setAnimalArray] = useState(['rat', 'hippo', 'penguin']);
 
   const snailStyle = { fontSize: `${snailSize}rem` };
